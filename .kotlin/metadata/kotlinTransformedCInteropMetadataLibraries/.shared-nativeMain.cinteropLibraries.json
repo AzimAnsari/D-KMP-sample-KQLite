@@ -1,7 +1,17 @@
 [
   {
+    "moduleId": "androidx.sqlite:sqlite-bundled:2.6.2",
+    "file": "/Users/azim.ansari/AndroidStudioProjects/D-KMP-sample-KQLite/.kotlin/metadata/kotlinTransformedCInteropMetadataLibraries/androidx.sqlite-sqlite-bundled-2.6.2-nativeMain-cinterop/androidx.sqlite_sqlite-bundled-cinterop-androidXBundledSqlite-dCYVRw.klib",
+    "sourceSetName": "nativeMain"
+  },
+  {
     "moduleId": "org.jetbrains.kotlinx:atomicfu:0.23.1",
     "file": "/Users/azim.ansari/AndroidStudioProjects/D-KMP-sample-KQLite/.kotlin/metadata/kotlinTransformedCInteropMetadataLibraries/org.jetbrains.kotlinx-atomicfu-0.23.1-nativeMain-cinterop/org.jetbrains.kotlinx_atomicfu-cinterop-interop-wFq7cg.klib",
+    "sourceSetName": "nativeMain"
+  },
+  {
+    "moduleId": "androidx.sqlite:sqlite-framework:2.6.2",
+    "file": "/Users/azim.ansari/AndroidStudioProjects/D-KMP-sample-KQLite/.kotlin/metadata/kotlinTransformedCInteropMetadataLibraries/androidx.sqlite-sqlite-framework-2.6.2-nativeMain-cinterop/androidx.sqlite_sqlite-framework-cinterop-sqlite3-5Ubkcg.klib",
     "sourceSetName": "nativeMain"
   },
   {

@@ -5,7 +5,6 @@ plugins {
     alias(libs.plugins.kotlinMultiplatform)
     alias(libs.plugins.kotlinSerialization)
     alias(libs.plugins.androidLibrary)
-    alias(libs.plugins.sqlDelight)
     alias(libs.plugins.skie)
 }
 
@@ -45,7 +44,8 @@ kotlin {
             implementation(libs.ktor.contentNegotiation)
             implementation(libs.ktor.serialization)
             implementation(libs.multiplatformSettings)
-            implementation(libs.sqlDelight.common)
+            implementation(libs.kqlite)
+            implementation(libs.sqlite.bundled)
         }
         commonTest.dependencies {
             implementation(kotlin("test"))
@@ -55,26 +55,22 @@ kotlin {
         androidMain.dependencies {
             implementation(libs.kotlinx.coroutines.android)
             implementation(libs.ktor.android)
-            implementation(libs.sqlDelight.android)
             implementation(libs.slf4j)
         }
         val androidUnitTest by getting {
             dependencies {
-                implementation(libs.sqlDelight.jvm)
             }
         }
         val desktopMain by getting {
             dependencies {
                 implementation(libs.kotlinx.coroutines.jvm)
                 implementation(libs.ktor.jvm)
-                implementation(libs.sqlDelight.jvm)
                 implementation(libs.logback)
             }
         }
         // val desktopTest by getting { dependencies { }}
         iosMain.dependencies {
             implementation(libs.ktor.ios)
-            implementation(libs.sqlDelight.ios)
         }
         // iosTest.dependencies {}
     }
@@ -94,15 +90,6 @@ android {
     buildTypes {
         getByName("release") {
             isMinifyEnabled = true
-        }
-    }
-}
-
-sqldelight {
-    databases {
-        create("LocalDb") {
-            packageName.set("mylocal.db")
-            srcDirs("src/commonMain/kotlin")
         }
     }
 }
