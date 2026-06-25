@@ -14,7 +14,7 @@ dependencies {
 }
 
 kotlin {
-    jvmToolchain(18)
+    jvmToolchain(17)
     androidTarget()
     jvm("desktop")
     listOf(
@@ -84,8 +84,8 @@ android {
     namespace = "eu.baroncelli.dkmpsample.shared"
     compileSdk = libs.versions.android.compileSdk.get().toInt()
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_18
-        targetCompatibility = JavaVersion.VERSION_18
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
         isCoreLibraryDesugaringEnabled = true
     }
     defaultConfig {

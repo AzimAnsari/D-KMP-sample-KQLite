@@ -1,0 +1,21 @@
+# Please add these rules to your existing keep rules in order to suppress warnings.
+# This is generated automatically by the Android Gradle plugin.
+-dontwarn eu.baroncelli.dkmpsample.shared.viewmodel.DKMPViewModel$Factory
+-dontwarn eu.baroncelli.dkmpsample.shared.viewmodel.DKMPViewModel
+-dontwarn eu.baroncelli.dkmpsample.shared.viewmodel.DKMPViewModelForAndroidKt
+-dontwarn eu.baroncelli.dkmpsample.shared.viewmodel.Events
+-dontwarn eu.baroncelli.dkmpsample.shared.viewmodel.Navigation
+-dontwarn eu.baroncelli.dkmpsample.shared.viewmodel.NavigationState
+-dontwarn eu.baroncelli.dkmpsample.shared.viewmodel.ScreenIdentifier$Factory
+-dontwarn eu.baroncelli.dkmpsample.shared.viewmodel.ScreenIdentifier
+-dontwarn eu.baroncelli.dkmpsample.shared.viewmodel.ScreenParams
+-dontwarn eu.baroncelli.dkmpsample.shared.viewmodel.ScreenState
+-dontwarn eu.baroncelli.dkmpsample.shared.viewmodel.StateProvider
+-dontwarn eu.baroncelli.dkmpsample.shared.viewmodel.screens.Level1Navigation
+-dontwarn eu.baroncelli.dkmpsample.shared.viewmodel.screens.Screen
+-dontwarn eu.baroncelli.dkmpsample.shared.viewmodel.screens.countrieslist.CountriesListEventsKt
+-dontwarn eu.baroncelli.dkmpsample.shared.viewmodel.screens.countrieslist.CountriesListItem
+-dontwarn eu.baroncelli.dkmpsample.shared.viewmodel.screens.countrieslist.CountriesListState
+-dontwarn eu.baroncelli.dkmpsample.shared.viewmodel.screens.countrydetail.CountryDetailParams
+-dontwarn eu.baroncelli.dkmpsample.shared.viewmodel.screens.countrydetail.CountryDetailState
+-dontwarn eu.baroncelli.dkmpsample.shared.viewmodel.screens.countrydetail.CountryInfo
